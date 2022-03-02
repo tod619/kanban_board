@@ -85,19 +85,19 @@ function updateDOM() {
   // Progress Column
   progressList.textContent = ''
   progressListArray.forEach((progressItem, idx) => {
-    createItemEl(progressList, 0, progressItem, idx)
+    createItemEl(progressList, 1, progressItem, idx)
   })
 
   // Complete Column
   completeList.textContent = ''
   completeListArray.forEach((completeItem, idx) => {
-    createItemEl(completeList, 0, completeItem, idx)
+    createItemEl(completeList, 2, completeItem, idx)
   })
 
   // On Hold Column
   onHoldList.textContent = ''
   onHoldListArray.forEach((onHoldItem, idx) => {
-    createItemEl(onHoldList, 0, onHoldItem, idx)
+    createItemEl(onHoldList, 3, onHoldItem, idx)
   })
 
   // Run getSavedColumns only once, Update Local Storage
